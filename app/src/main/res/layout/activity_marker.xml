@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Relativelayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<com.huawei.hms.maps.MapView
+    android:id="@+id/mapView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    map:mapType="normal"
+    map:uiCompass="true"
+    map:uiZoomControls="true"
+    tools:ignore="MissingClass" />
+<LinearLayout
+android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true">
+<Button
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="show markers"
+    android:id="@+id/button_show_markers"
+    android:layout_weight="1"/>
+    <Button
+        android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="remove markers"
+    android:id="@+id/button_remove_markers"
+    android:layout_weight="1"/>
+</LinearLayout>
+</Relativelayout>
